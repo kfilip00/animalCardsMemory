@@ -23,6 +23,10 @@ public class MainToken : MonoBehaviour
                     spriteRenderer.sprite = faces[faceIndex];
                     controlScript.CheckTokens();
                 }
+                else
+                {
+                    AudioManager.Instance.PlayCardReveal();
+                }
             }
             else
             {
